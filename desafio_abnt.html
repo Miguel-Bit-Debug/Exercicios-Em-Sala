@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <script src="abnt.js"></script>
+
+    <title>index</title>
+    <style>
+        body {
+            background-color: rgb(199, 199, 199);
+        }
+
+        .jumbotron {
+            background: crimson;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="jumbotron">
+            <h1 class="justify-content-center">Ficha de cadastro</h1>
+        </div>
+
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control" id="autor" placeholder="Nome do Autor: ">
+            </div>
+
+            <div class="form-group">
+                <input type="text" class="form-control" id="sobre" placeholder="Sobrenome do Autor: ">
+            </div>
+
+
+            <div class="form-group">
+                <input type="text" class="form-control" id="titulo" placeholder="Título:">
+            </div>
+
+            <div class="form-group">
+                <input type="text" class="form-control" id="edicao" placeholder="Número de Edição:">
+            </div>
+
+            <div class="form-group">
+                <input type="text" class="form-control" id="publicacao" placeholder="Local de publicação:">
+            </div>
+
+            <div class="form-group">
+                <input type="text" class="form-control" id="editora" placeholder="Nome da Editora:">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="ano" placeholder="Ano de Publicação:">
+            </div>
+
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo"
+                onclick="mostrar()">Ficha ABNT</button>
+
+    </div>
+    </form>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="abnt.js"></script>
+</body>
+
+</html>

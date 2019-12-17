@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <title>Desafio Objetos</title>
+    <style>
+        .jumbotron {
+            color: white;
+            background-color: lightblue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Situação do(a) Aluno(a)</h1>
+        </div>
+
+        <form>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <input type="text" class="form-control" placeholder="Digite o nome do aluno" id="nome">
+                </div>
+
+
+
+                <div class="form-group col-md-3">
+                    <input type="text" class="form-control" placeholder="Digite o RG do Aluno(a)" id="rg">
+                </div>
+
+                <div class="form-group col-md-3">
+                    <input type="text" class="form-control" placeholder="Digite o CPF do Aluno(a)" id="cpf">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-md-12">
+                    <input type="email" class="form-control" placeholder="Digite o email do Aluno" id="email">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-md-4">
+                    <input type="number" class="form-control" placeholder="Primeira nota" id="nota01">
+                </div>
+
+                <div class="form-group col-md-4">
+                    <input type="number" class="form-control" placeholder="Segunda nota" id="nota02">
+                </div>
+
+                <div class="form-group col-md-4">
+                    <input type="number" class="form-control" placeholder="Terceira nota" id="nota03">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-md-2">
+                    <button type="button" class="btn btn-secondary" id="modal" onclick="mostra()">Mostra</button>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="form-group col-md-12">
+                    <input type="number" class="form-control" placeholder="Média" id="media">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="form-group col-md-2">
+                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modalExemplo"
+                        onclick="calcular()">Calcular</button>
+                </div>
+
+            </div>
+
+    </div>
+
+    </form>
+
+    </div>
+    <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Título do modal</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Texto do corpo do modal, é aqui.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+
+    <script src='js/jquery.js'></script>
+    <script src="/js/popper.min.js"></script>
+    <script src='js/bootstrap.js'></script>
+    <script src="desafio.js"></script>
+
+
+</body>
+
+</html>
